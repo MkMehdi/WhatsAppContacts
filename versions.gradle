@@ -1,0 +1,69 @@
+
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+ext.deps = [:]
+def versions = [:]
+versions.arch_core = "1.1.1"
+versions.room = "1.1.0"
+versions.lifecycle = "1.1.1"
+versions.support = "26.1.0"
+versions.junit = "4.12"
+versions.espresso = "3.0.1"
+versions.constraint_layout = "1.1.0"
+versions.butterknife = "8.8.1"
+versions.easypermissions = "1.0.1"
+
+def deps = [:]
+
+def support = [:]
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.app_compat = "com.android.support:appcompat-v7:$versions.support"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.support"
+support.cardview = "com.android.support:cardview-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.core_utils = "com.android.support:support-core-utils:$versions.support"
+support.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+deps.support = support
+
+
+def lifecycle = [:]
+lifecycle.runtime = "android.arch.lifecycle:runtime:$versions.lifecycle"
+lifecycle.extensions = "android.arch.lifecycle:extensions:$versions.lifecycle"
+lifecycle.java8 = "android.arch.lifecycle:common-java8:$versions.lifecycle"
+lifecycle.compiler = "android.arch.lifecycle:compiler:$versions.lifecycle"
+deps.lifecycle = lifecycle
+
+def data = [:]
+data.butterknife = "com.jakewharton:butterknife:$versions.butterknife"
+data.butterknife_compiler = "com.jakewharton:butterknife-compiler:$versions.butterknife"
+deps.data = data
+
+def atsl = [:]
+atsl.runner = "com.android.support.test:runner:$versions.atsl_runner"
+deps.atsl = atsl
+
+def security = [:]
+security.easypermissions = "pub.devrel:easypermissions:$versions.easypermissions"
+deps.security = security
+
+def espresso = [:]
+espresso.core = "com.android.support.test.espresso:espresso-core:$versions.espresso"
+espresso.contrib = "com.android.support.test.espresso:espresso-contrib:$versions.espresso"
+espresso.intents = "com.android.support.test.espresso:espresso-intents:$versions.espresso"
+deps.espresso = espresso
+
+def mockito = [:]
+mockito.core = "org.mockito:mockito-core:$versions.mockito"
+mockito.all = "org.mockito:mockito-all:$versions.mockito_all"
+deps.mockito = mockito
+
+
+def unit_test = [:]
+unit_test.junit = "junit:junit:$versions.junit"
+deps.unit_test = unit_test
+
+
+ext.deps = deps

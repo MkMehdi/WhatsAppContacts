@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WhatsAppContacts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="desc_enable_contacts">The app cannot work without enabling the access to phone contacts</string>
+
+    <string name="rationale_contacts">This app needs access to your Phone Contacts</string>
+
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to WhatsApp Contacts with the following permissions:
+        \n Contacts &amp; %s
+    </string>
+
+</resources>
