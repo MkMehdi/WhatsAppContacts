@@ -16,8 +16,7 @@ import ma.mkmehdi.whatsappcontacts.model.Contact;
 
 /**
  * Created by Elmehdi Mellouk on 06/06/18.
- * XPI
- * elmehdi.mellouk@xpi.com
+ * mellouk.elmehdi@gmail.com
  */
 public class ContactListViewModel extends AndroidViewModel {
 
