@@ -94,10 +94,9 @@ public class ContactListViewModel extends AndroidViewModel {
     }
 
     /**
-     * A creator is used to inject the product ID into the ViewModel
+     * A creator is used to inject the ViewModel
      * <p>
      * This creator is to showcase how to inject dependencies into ViewModels. It's not
-     * actually necessary in this case, as the product ID can be passed in a public method.
      */
     public static class Factory extends ViewModelProvider.NewInstanceFactory {
 
