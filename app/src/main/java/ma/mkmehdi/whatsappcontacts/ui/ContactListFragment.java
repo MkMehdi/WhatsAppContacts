@@ -64,10 +64,10 @@ public class ContactListFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         init();
-        showWifiDevices();
+        showWhatsAppContacts();
     }
 
-    public void showWifiDevices() {
+    public void showWhatsAppContacts() {
 
         mWhatsAppContactList = model.collectContacts();
 
