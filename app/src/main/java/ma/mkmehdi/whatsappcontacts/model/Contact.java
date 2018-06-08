@@ -2,8 +2,7 @@ package ma.mkmehdi.whatsappcontacts.model;
 
 /**
  * Created by Elmehdi Mellouk on 06/06/18.
- * XPI
- * elmehdi.mellouk@xpi.com
+ * mellouk.elmehdi@gmail.com
  */
 public class Contact {
     private String id;
